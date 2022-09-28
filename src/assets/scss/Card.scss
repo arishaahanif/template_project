@@ -1,0 +1,60 @@
+.section_4 {
+  .recent_episodes{
+    padding-bottom: 2em;
+    .epi {
+      font-weight: 700;
+    }
+    .para_1 {
+      line-height: 21px;
+      span {
+        display: block;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .btn{
+     background-color: #503ae7;
+     color: #fff; 
+     border-radius: 0;
+     border: 0;
+     font-size: 16px;
+     padding: 8px 25px;
+     &:hover {
+      background-color: #503ae7;
+      color: #fff;
+     }
+    }
+  }
+  .sub_section {
+    padding: 20px 0px;
+    .card {
+      border: none;
+      border-radius: none;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+      cursor: pointer;
+     .card-img-overlay{
+      left: initial;
+     }
+      .build {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+}
+.l_container {
+  display: flex;
+  align-items: center;
+}
+.btn_2 {
+  color: #503ae7 !important;
+  font-weight: 600;
+  font-size: 18px;
+  &:hover {
+    border: none;
+  }
+}

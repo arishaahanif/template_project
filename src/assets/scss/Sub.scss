@@ -1,0 +1,41 @@
+.section_4 {
+  padding: 54px 0px;
+}
+.bg_image {
+  background-image: url(../images/subscribe_001.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .main_section {
+    padding: 6em 0px;
+      .sub_global_head {
+        margin-bottom: 20px;
+      }
+  }
+  .input-group {
+    width: 500px;
+    margin: 0 auto;
+    .form-control {
+      border-radius: 0;
+      &::placeholder {
+        color: #afb0b9;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn {
+      background-color: #1ad993; 
+      color: #14142B;
+      font-weight: 700;
+      border-radius: 0;
+      border: 0;
+      font-size: 16px;
+      padding: 8px 25px;
+      &:hover {
+        background-color: #1ad993;
+      }
+    }
+  }
+}
+

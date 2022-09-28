@@ -1,0 +1,17 @@
+$Secondary-color: #503ae7;
+.section_6 {
+  position: relative;
+  padding: 2.5em 0;
+  .sponsors {
+    padding: 4em 0 2em 0;
+    background: $Secondary-color;
+    position: absolute;
+    width: 100%;
+    bottom: -103px;
+    .brands {
+      display: flex;
+      padding: 3em 0;
+      justify-content: space-around;
+    }
+  }
+}

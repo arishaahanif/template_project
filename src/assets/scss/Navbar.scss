@@ -1,0 +1,23 @@
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: #14142b;
+      margin-right: 25px;
+      &:last-child {
+         margin-right: 0;
+      }
+    }
+    .list-group {
+      .list-group-item {
+        border: 0;
+        padding: 0 5px;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,33 +1,42 @@
-import React from 'react'
-import styles from "./Navbar.module.scss"
+import React from "react";
+import "../../assets/scss/Navbar.scss";
+import { Container, ListGroup, Nav, Navbar } from "react-bootstrap";
+import logo from "../../assets/images/Logo_1.png"
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
-const Navbar = () => {
-  const navbarLogo = "./images/navbar_logo.png"
-  const linkdinIcon = "./images/linkedin.png"
-  const instagramIcon = "./images/instagram.png"
-  const facebookIcon = "./images/facebook.png"
-
+const Navbars = () => {
   return (
-    <div className={styles.navbar_container}>
-      <div className={styles.navbar}>
-      <div className={styles.logo_section}>
-      <img src={navbarLogo} alt="navbarlogo" />
-      </div>
-      <div className={styles.nav_items}>
-        <p>Podcasts</p>
-        <p>Host</p>
-        <p>About</p>
-        <p>Blog</p>
-        <p>Contacts</p>
-         
-         <img src={facebookIcon} alt="linkdinIcon" />
-         <img src={linkdinIcon} alt="linkdinIcon" />
-         <img src={instagramIcon} alt="linkdinIcon" />
+    <Navbar expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img className="logo" src={logo} width={135} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Podcasts</Nav.Link>
+            <Nav.Link href="#link">Host</Nav.Link>
+            <Nav.Link href="#link">About</Nav.Link>
+            <Nav.Link href="#link">Blog</Nav.Link>
+            <Nav.Link href="#link">Contact</Nav.Link>
+            <Nav.Link href="#link">
+              <ListGroup horizontal>
+                <ListGroup.Item>
+                  <FaFacebookF />
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <FaLinkedinIn />
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <FaInstagram />
+                </ListGroup.Item>
+              </ListGroup>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-      </div>
-    </div>
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbars;

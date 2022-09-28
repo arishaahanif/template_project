@@ -1,0 +1,45 @@
+.section_3 {
+  padding: 50px 0px;
+  .center {
+    align-items: center;
+    .main{
+        position: relative;
+        padding-left: 120px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background: #1AD993;
+        width: 58px;
+        height: 11px;
+        top: -72px;
+        // left: -212px;
+        right: 180px;
+
+
+    }
+}
+  }
+  .cas {
+    width: 100%;
+  }
+  .podcast {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+
+    .block {
+      display: block;
+      .you_tube {
+        color: #503ae7;
+      }
+    }
+  }
+  .para_1 {
+    line-height: 28px;
+
+    .block {
+      display: block;
+    }
+  }
+}

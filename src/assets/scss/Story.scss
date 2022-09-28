@@ -1,0 +1,55 @@
+.section_1 {
+  padding: 50px 0 0 0;
+}
+.bec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  justify-content: space-around;
+  .heading_1 {
+    padding: 15px 0px;
+    font-weight: 700;
+    font-size: 48px;
+    font-weight: 100px;
+    text-transform: capitalize;
+    span {
+      display: block;
+    }
+  }
+  .para_1 {
+    line-height: 28px;
+    span {
+      display: block;
+    }
+  }
+  .input-group {
+    width: 490px;
+    .p_holder {
+      background: #f4f2ff;
+      border: 0;
+      border-radius: 0;
+      &::placeholder {
+        color: #afb0b9;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .com {
+      background-color: #503ae7;
+      color: #f4f2ff;
+      padding: 8px 25px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0;
+      font-weight: 600;
+      transition: all 0.3 ease-in-out;
+      &:hover {
+        background: #230cb5;
+      }
+    }
+  }
+}
+
