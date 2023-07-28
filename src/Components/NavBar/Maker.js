@@ -5,10 +5,8 @@ import "../../assets/scss/Maker.scss";
 const Make = () => {
   return (
     <div className="section_2">
-      {/* <Container> */}
       <Row className="center">
-        {/* <Container> */}
-        <Col lg={6}>
+        <Col lg={6} md={6} sm={6} xs={6}>
           <div className="maker">
             <h1 className="podcast">
               A podcast for maker and <span>entrepreneurs</span>
@@ -21,9 +19,7 @@ const Make = () => {
           </div>
         </Col>
 
-        {/* </Container> */}
-
-        <Col lg={6}>
+        <Col lg={6} md={6}sm={6}xs={6}>
           <div className="main_sec">
             <div className="makes_clients">
               <img className="mak_image" src={Image} />
@@ -31,7 +27,6 @@ const Make = () => {
           </div>
         </Col>
       </Row>
-      {/* </Container> */}
     </div>
   );
 };

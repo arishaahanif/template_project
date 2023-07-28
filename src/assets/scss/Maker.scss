@@ -3,67 +3,108 @@
   .center {
     align-items: center;
     .maker {
-        padding-left: 184px;
-        position: relative;
-        &::before{
-            content: "";
-            position: absolute;
-            background: #832BC1;
-            width: 20px;
-            height: 8px;
-            top: -60px;
-            left: 205px;
-        }
-        &::after{
-            content: "";
-            position: absolute;
-            background: #1AD993;
-            width: 50px;
-            height: 8px;
-            bottom: -60px;
-            left: 135px;
-        }
-    }
-  }
-  .podcast {
-    font-weight: 700;
-    font-size: 33px;
-    line-height: 40px;
-    span {
-      display: block;
-    }
-  }
-  .para_1 {
-    line-height: 28px;
-
-    span {
-      display: block;
-    }
-  }
-  .main_sec {
-    padding: 0px 0px;
-    background-color: #503ae7;
-    height: 450px;
-    position: relative;
-    &::before{
+      padding-left: 184px;
+      position: relative;
+      &::before {
         content: "";
         position: absolute;
-        background: #832BC1;
+        background: #832bc1;
+        width: 20px;
+        height: 8px;
+        top: -60px;
+        left: 205px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background: #1ad993;
+        width: 50px;
+        height: 8px;
+        bottom: -60px;
+        left: 135px;
+      }
+    
+
+    .podcast {
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 40px;
+
+      span {
+        display: block;
+      }
+    }
+    }
+    .para_1 {
+      line-height: 28px;
+
+      span {
+        display: block;
+      }
+    }
+    .main_sec {
+      padding: 0px 0px;
+      background-color: #503ae7;
+      height: 450px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background: #832bc1;
         width: 58px;
         height: 8px;
         top: 83px;
         left: -212px;
-
-    }
-    .makes_clients{
+      }
+      .makes_clients {
         position: absolute;
         left: 100px;
         top: 65px;
-        .mak_image{
-            width: 380px;
+        .mak_image {
+          width: 380px;
         }
+      }
     }
-    // .mak_image {
-    // }
   }
+}
+@media (max-width: 1366px) {
+  .section_2 {
+    .center {
+      .maker {
+        padding-left: 60px;
+      }
+      .main_sec{
+        .makes_clients{
+          left:64px;
+          .mak_image{
+            width:330px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .section_2 {
+  .center{
+    .podcast {
+      font-size: 28px;
+    }
+    .main_sec {
+      .makes_clients {
+        .mak_image {
+          width: 308px;
+        }
+      }
+    }
+  }
+  }
+}
+
+@media (max-width:768px) {
+  .section_2{
+    display: none;
+  }
+  
 }

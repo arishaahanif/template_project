@@ -48,7 +48,7 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <div
+      <div className="prd_slider"
         style={{
           paddingBottom: "50px",
         }}

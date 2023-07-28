@@ -1,15 +1,20 @@
-body {
-  overflow-x: hidden;
-}
+
 .navbar {
+  .navbar_head{
+    padding:0;
+ 
+  }
   .navbar-nav {
     .nav-link {
       color: #14142b;
       margin-right: 25px;
       &:last-child {
-         margin-right: 0;
+        margin-right: 0;
+
+      
       }
     }
+
     .list-group {
       .list-group-item {
         border: 0;
@@ -21,3 +26,19 @@ body {
     }
   }
 }
+@media(max-width:768px){
+  .navbar{
+    .navbar_head{
+      padding:10px 0;
+    }
+    .navbar-nav{
+      .nav-link{
+        &:last-child{
+          margin-left: -12px;
+
+        }
+      }
+    }
+  }
+}
+

@@ -1,4 +1,4 @@
-.reviews_slider{
+.reviews_slider {
   position: relative;
 }
 
@@ -14,23 +14,24 @@
   top: -45px;
   background: #503ae7 !important;
 }
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   width: 45px;
   height: 45px;
   border-radius: 100px;
 }
 .slick-prev:before {
-  content: url('../images/left.png');
+  content: url("../images/left.png");
   display: flex;
   justify-content: center;
-
 }
 .slick-next:before {
-  content: url('../images/right.png');
+  content: url("../images/right.png");
   display: flex;
   justify-content: center;
 }
-.slick-prev:before, .slick-next:before{
+.slick-prev:before,
+.slick-next:before {
   line-height: 3;
   font-size: 15px;
 }
@@ -44,7 +45,7 @@
 .ca .card {
   border-radius: 0;
   border: 0;
-  margin-right:10px;
+  margin-right: 10px;
   border-bottom: 6px solid #503ae7;
   .card-body {
     padding: 12px 0px;
@@ -64,3 +65,50 @@
     padding: 15px 0px 35px 0px;
   }
 }
+@media (max-width: 768px) {
+  .hat_1 {
+    width: 70px;
+  }
+  .star_1 {
+    width: 90px;
+  }
+  .ca {
+    .card {
+      .card-body {
+        .eve {
+          font-size: 16px;
+        }
+      }
+    }
+    .card_1 {
+      .card-body {
+        .eve {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .reviews_slider{
+    .lorem{
+      .para_1{
+        span{
+          
+        display: inline;
+      }
+    }
+  }
+}
+ 
+  
+    .slick-prev {
+      display: none;
+    }
+    .slick-next {
+      display: none;
+    }
+  
+}
+
+

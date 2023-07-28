@@ -21,15 +21,15 @@ const Episode = () => {
               <span>atmosphere, for the sky was a dead black,</span>
             </p>
             </div>
-            <div>
+            <div className="but">
             <Button className="btn" variant="">
               See All Episodes
             </Button>{" "}
             </div>
           </div>
           <div className="sub_section">
-            <Row>
-              <Col lg={4}>
+            <Row className="center">
+              <Col lg={4}md={6}>
                 <Card >
                   <Card.Img variant="top" src={Peoples} />
                   <Card.ImgOverlay>
@@ -54,7 +54,7 @@ const Episode = () => {
                   </div>
                 </Card>
               </Col>
-              <Col lg={4}>
+              <Col lg={4}md={6}>
                 <Card >
                   <Card.Img variant="top" src={Phone} />
                   <Card.ImgOverlay>
@@ -80,7 +80,7 @@ const Episode = () => {
                   </div>
                 </Card>
               </Col>
-              <Col lg={4}>
+              <Col lg={4}md={6} >
                 <Card >
                   <Card.Img variant="top" src={Women} />
                   <Card.ImgOverlay>

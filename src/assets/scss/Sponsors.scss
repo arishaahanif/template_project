@@ -12,6 +12,39 @@ $Secondary-color: #503ae7;
       display: flex;
       padding: 3em 0;
       justify-content: space-around;
+
     }
   }
 }
+
+@media(max-width:1024px) {
+  .section_6 {
+    .sponsors{
+      .brands{
+        img{
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:786px) {
+  .section_6 {
+    .sponsors{
+      .brands{
+        img{
+          width: 85px;
+        }
+      }
+    }
+  }
+  
+}
+@media(max-width:576px){
+  .section_6{
+   display: none;
+  }
+}
+
+
+    

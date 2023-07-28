@@ -1,45 +1,126 @@
 .section_3 {
   padding: 50px 0px;
+  overflow-x: hidden;
   .center {
     align-items: center;
-    .main{
-        position: relative;
-        padding-left: 120px;
+    .main {
+      position: relative;
+      padding-left: 120px;
 
-    &::before{
+      &::before {
         content: "";
         position: absolute;
-        background: #1AD993;
+        background: #1ad993;
         width: 58px;
         height: 11px;
         top: -72px;
-        // left: -212px;
         right: 180px;
-
-
+      }
     }
-}
-  }
-  .cas {
-    width: 100%;
-  }
-  .podcast {
-    font-weight: 700;
-    font-size: 33px;
-    line-height: 40px;
 
-    .block {
-      display: block;
-      .you_tube {
-        color: #503ae7;
+    .cas {
+      width: 100%;
+    }
+    .podcast {
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 40px;
+
+      .block {
+        display: block;
+        .you_tube {
+          color: #503ae7;
+        }
+      }
+    }
+    .para_1 {
+      line-height: 28px;
+
+      .block {
+        display: block;
       }
     }
   }
-  .para_1 {
-    line-height: 28px;
-
-    .block {
-      display: block;
+}
+@media (max-width: 1366px) {
+  .section_3 {
+    .center {
+      .main {
+        padding-left: 48px;
+      }
     }
   }
 }
+@media (max-width: 991px) {
+  .section_3 {
+    .podcast {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section_3 {
+    .center {
+     .amet{
+      .main {
+        padding-left: 0px;
+       margin: 20px 30px;
+        ;
+        &::before {
+          display: none;
+        }
+      
+
+      .podcast {
+        font-size: 23px;
+      }
+    .para_1{
+      span{
+        display: inline;
+      }
+    }
+    }
+     }
+  }
+  }
+}
+@media (max-width: 576px) {
+  .section_3 {
+    .center {
+      flex-direction: column;
+      .amet {
+        width: 100%;
+      }
+      .main {
+        margin: 20px 30px;
+        .podcast {
+          span {
+            display: inline !important;
+          }
+        }
+        .para_1 {
+          span {
+            display: inline !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section_3 {
+    .center {
+      .main {
+        .podcast {
+          font-size: 15px;
+        }
+        .para_1 {
+          .block {
+            display: inline !important;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,5 +1,5 @@
 .section_4 {
-  .recent_episodes{
+  .recent_episodes {
     padding-bottom: 2em;
     .epi {
       font-weight: 700;
@@ -13,48 +13,119 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    .btn{
-     background-color: #503ae7;
-     color: #fff; 
-     border-radius: 0;
-     border: 0;
-     font-size: 16px;
-     padding: 8px 25px;
-     &:hover {
+    .btn {
       background-color: #503ae7;
       color: #fff;
-     }
+      border-radius: 0;
+      border: 0;
+      font-size: 16px;
+      padding: 8px 25px;
+      &:hover {
+        background-color: #503ae7;
+        color: #fff;
+      }
     }
   }
   .sub_section {
     padding: 20px 0px;
+    .center {
+      justify-content: center;
+    
     .card {
       border: none;
       border-radius: none;
-      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+      margin-bottom: 30px;
       cursor: pointer;
-     .card-img-overlay{
-      left: initial;
-     }
+      .card-img-overlay {
+        left: initial;
+      }
       .build {
         padding: 10px;
+        .title {
+          font-weight: 700;
+        }
+      }
+    }
+
+    
+    .l_container {
+      display: flex;
+      align-items: center;
+    }
+    .btn_2 {
+      color: #503ae7 !important;
+      font-weight: 600;
+      font-size: 18px;
+      &:hover {
+        border: none;
       }
     }
   }
 }
+}
+@media (max-width: 768px) {
+  .section_4 {
+    .slide_head{
+      font-size:15px;
+    }
+    .recent_episodes {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .section_4 {
+    .recent_episodes {
+      align-items: center;
+    }
+    .sub_section {
+      .card {
+        margin: 0px 10px 30px 10px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section_4 {
+    .recent_episodes {
+      flex-direction: column;
 
-.title {
-  font-weight: 700;
+      .epi {
+        font-size: 18px;
+      }
+      .para_1 {
+        span {
+          display: inline;
+        }
+      }
+      .but{
+        margin-left:auto;
+      }
+    }
+    .center{
+      .card{
+        .build{
+          .title{
+            font-size:18px;
+          }
+        }
+      }
+    }
+  }
 }
-.l_container {
-  display: flex;
-  align-items: center;
-}
-.btn_2 {
-  color: #503ae7 !important;
-  font-weight: 600;
-  font-size: 18px;
-  &:hover {
-    border: none;
+@media(max-width:320px){
+  .section_4 {
+    .sub_section{
+      .center{
+        .card{
+          .build{
+            .title{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
 }
